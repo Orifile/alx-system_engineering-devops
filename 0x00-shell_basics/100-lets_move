@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir -p /tmp/u  # Create the directory /tmp/u if it doesn't exist
+
+for file in [A-Z]*; do
+    mv "$file" /tmp/u
+done
