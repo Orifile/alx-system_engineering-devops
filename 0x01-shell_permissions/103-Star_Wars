@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Function to print each line with a delay
+print_with_delay() {
+  local text=$1
+  local delay=$2
+  for ((i = 0; i < ${#text}; i++)); do
+    echo -n "${text:$i:1}"
+    sleep "$delay"
+  done
+  echo
+}
+
+# Opening crawl text
+opening_crawl="
+A long time ago in a galaxy far, far away...
+
+It is a period of civil war.
