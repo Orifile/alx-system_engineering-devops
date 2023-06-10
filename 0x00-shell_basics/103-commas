@@ -1,1 +1,3 @@
-ls -ap1 | awk '{ORS = NR % 2 ? ", " : "\n"}; {print}'
+#!/bin/bash
+ls -xamp
+
